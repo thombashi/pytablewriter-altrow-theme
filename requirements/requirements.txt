@@ -1,0 +1,2 @@
+pytablewriter>=0.56.0,<1
+tcolorpy>=0.0.5,<1
