@@ -5,24 +5,23 @@
 
 Summary
 ============================================
+.. image:: https://badge.fury.io/py/pytablewriter-altrow-theme.svg
+    :target: https://badge.fury.io/py/pytablewriter-altrow-theme
+    :alt: PyPI package version
 
-.. image:: https://img.shields.io/travis/thombashi/pytablewriter-altrow-theme/master.svg?label=Linux/macOS%20CI
-    :target: https://travis-ci.org/thombashi/pytablewriter-altrow-theme
-    :alt: Linux/macOS CI status
+.. image:: https://img.shields.io/pypi/pyversions/pytablewriter-altrow-theme.svg
+    :target: https://pypi.org/project/pytablewriter-altrow-theme
+    :alt: Supported Python versions
 
-.. image:: https://img.shields.io/appveyor/ci/thombashi/pytablewriter-altrow-theme/master.svg?label=Windows%20CI
-    :target: https://ci.appveyor.com/project/thombashi/pytablewriter-altrow-theme/branch/master
-    :alt: Windows CI status
+.. image:: https://img.shields.io/pypi/implementation/pytablewriter-altrow-theme.svg
+    :target: https://pypi.org/project/pytablewriter-altrow-theme
+    :alt: Supported Python implementations
 
-.. image:: https://coveralls.io/repos/github/thombashi/pytablewriter-altrow-theme/badge.svg?branch=master
-    :target: https://coveralls.io/github/thombashi/pytablewriter-altrow-theme?branch=master
-    :alt: Test coverage: coveralls
+.. image:: https://github.com/thombashi/pytablewriter-altrow-theme/workflows/Tests/badge.svg
+    :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions?query=workflow%3ATests
+    :alt: Linux/macOS/Windows CI status
 
-.. image:: https://codecov.io/gh/thombashi/pytablewriter-altrow-theme/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/thombashi/pytablewriter-altrow-theme
-    :alt: Test coverage: codecov
-
-pytablewriter-altrow-theme is a `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to provide a terminal theme.
+pytablewriter-altrow-theme is a `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to provide a theme that colored rows alternatively.
 
 
 Installation
