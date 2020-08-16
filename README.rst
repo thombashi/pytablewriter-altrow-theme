@@ -68,8 +68,6 @@ Usage
        :scale: 100%
        :alt: https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/ss/ptw-altrow-theme_example_yellow.png
 
-        Specify color to yellow
-
 
 Dependencies
 ============================================
