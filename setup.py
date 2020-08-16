@@ -40,7 +40,7 @@ setuptools.setup(
     url=REPOSITORY_URL,
     author=pkg_info["__author__"],
     author_email=pkg_info["__email__"],
-    description="DESCRIPTION",
+    description="A pytablewriter plugin to provide a theme that colored rows alternatively.",
     include_package_data=True,
     keywords=["pytablewriter", "plugin"],
     license=pkg_info["__license__"],
@@ -48,7 +48,6 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     packages=setuptools.find_packages(exclude=["tests*"]),
     project_urls={
-        "Documentation": "https://{:s}.rtfd.io/".format(MODULE_NAME),
         "Source": REPOSITORY_URL,
         "Tracker": "{:s}/issues".format(REPOSITORY_URL),
     },
