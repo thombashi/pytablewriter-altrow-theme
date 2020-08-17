@@ -4,7 +4,7 @@ from pytablewriter import TableWriterFactory
 
 
 def main():
-    writer = TableWriterFactory.create_from_format_name("md")
+    writer = TableWriterFactory.create_from_format_name("markdown")
     writer.headers = ["INT", "STR"]
     writer.value_matrix = [[1, "hoge"], [2, "foo"], [3, "bar"]]
     writer.margin = 1
