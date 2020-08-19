@@ -25,9 +25,6 @@ def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs) -> Optional[S
     row = lcell.row if lcell else rcell.row
     col = lcell.col if lcell else rcell.col
 
-    if row < 0:
-        return None
-
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
     if row % 2 == 0:
@@ -45,9 +42,6 @@ def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs) -> Optional[S
 def style_filter(cell: Cell, **kwargs) -> Optional[Style]:
     fg_color = None  # type: Union[Color, str, None]
     bg_color = None  # type: Union[Color, str, None]
-
-    if cell.row < 0:
-        return Style(font_weight="bold")
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
