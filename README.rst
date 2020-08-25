@@ -21,6 +21,10 @@ Summary
     :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions?query=workflow%3ATests
     :alt: Linux/macOS/Windows CI status
 
+.. image:: https://coveralls.io/repos/github/thombashi/pytablewriter-altrow-theme/badge.svg?branch=master
+    :target: https://coveralls.io/github/thombashi/pytablewriter-altrow-theme?branch=master
+    :alt: Test coverage: coveralls
+
 pytablewriter-altrow-theme is a `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to provide a theme that colored rows alternatively.
 
 
