@@ -26,7 +26,7 @@ class Test_set_theme:
         expected = dedent(
             """\
             | AAA | BBB |
-            |-----|-----|
+            | --- | --- |
             | aa  | bb  |
             | cc  | dd  |
             """
