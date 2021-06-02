@@ -23,7 +23,6 @@ def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs) -> Optional[S
     fg_color = None  # type: Union[Color, str, None]
     bg_color = None  # type: Union[Color, str, None]
     row = lcell.row if lcell else rcell.row
-    col = lcell.col if lcell else rcell.col
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
