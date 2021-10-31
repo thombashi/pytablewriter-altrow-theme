@@ -17,9 +17,9 @@ Summary
     :target: https://pypi.org/project/pytablewriter-altrow-theme
     :alt: Supported Python implementations
 
-.. image:: https://github.com/thombashi/pytablewriter-altrow-theme/workflows/Tests/badge.svg
-    :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions?query=workflow%3ATests
-    :alt: Linux/macOS/Windows CI status
+.. image:: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/lint_and_test.yml/badge.svg
+    :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/lint_and_test.yml
+    :alt: CI status of Linux/macOS/Windows
 
 .. image:: https://coveralls.io/repos/github/thombashi/pytablewriter-altrow-theme/badge.svg?branch=master
     :target: https://coveralls.io/github/thombashi/pytablewriter-altrow-theme?branch=master
