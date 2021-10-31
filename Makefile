@@ -9,7 +9,6 @@ build: clean
 .PHONY: check
 check:
 	@$(PYTHON) -m tox -e lint
-	-travis lint
 
 .PHONY: clean
 clean:
