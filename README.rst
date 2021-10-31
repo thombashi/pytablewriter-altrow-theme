@@ -40,13 +40,19 @@ Usage
 :Sample Code:
     .. code-block:: python
 
-        writer = TableWriterFactory.create_from_format_name("markdown")
-        writer.headers = ["INT", "STR"]
-        writer.value_matrix = [[1, "hoge"], [2, "foo"], [3, "bar"]]
-        writer.margin = 1
+        import pytablewriter as ptw
 
-        writer.set_theme("altrow")
-
+        writer = ptw.TableWriterFactory.create_from_format_name(
+            "markdown",
+            headers=["INT", "STR"],
+            value_matrix=[
+                [1, "hoge"],
+                [2, "foo"],
+                [3, "bar"],
+            ],
+            margin=1,
+            theme="altrow",
+        )
         writer.write_table()
 
 :Output:
@@ -58,10 +64,19 @@ Usage
 :Sample Code:
     .. code-block:: python
 
-        writer = TableWriterFactory.create_from_format_name("markdown")
-        writer.headers = ["INT", "STR"]
-        writer.value_matrix = [[1, "hoge"], [2, "foo"], [3, "bar"]]
-        writer.margin = 1
+        import pytablewriter as ptw
+
+        writer = ptw.TableWriterFactory.create_from_format_name(
+            "markdown",
+            headers=["INT", "STR"],
+            value_matrix=[
+                [1, "hoge"],
+                [2, "foo"],
+                [3, "bar"],
+            ],
+            margin=1,
+            theme="altrow",
+        )
 
         writer.set_theme("altrow", color="yellow")
 
