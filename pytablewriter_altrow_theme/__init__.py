@@ -1,4 +1,3 @@
-import sys
 from typing import Any, Dict, Optional, Union
 
 from pytablewriter.style import Cell, Style
