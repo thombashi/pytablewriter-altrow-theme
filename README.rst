@@ -17,8 +17,8 @@ Summary
     :target: https://pypi.org/project/pytablewriter-altrow-theme
     :alt: Supported Python implementations
 
-.. image:: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/lint_and_test.yml/badge.svg
-    :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/lint_and_test.yml
+.. image:: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/thombashi/pytablewriter-altrow-theme/actions/workflows/ci.yml
     :alt: CI status of Linux/macOS/Windows
 
 .. image:: https://coveralls.io/repos/github/thombashi/pytablewriter-altrow-theme/badge.svg?branch=master
@@ -90,6 +90,6 @@ Usage
 
 Dependencies
 ============================================
-- Python 3.6+
+- Python 3.7+
 - `Python package dependencies (automatically installed) <https://github.com/thombashi/pytablewriter-altrow-theme/network/dependencies>`__
 
