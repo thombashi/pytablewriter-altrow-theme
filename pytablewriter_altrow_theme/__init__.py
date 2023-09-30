@@ -1,4 +1,4 @@
-from typing import Any, Dict, Optional, Union
+from typing import Any, Optional, Union
 
 from pytablewriter.style import Cell, Style
 from tcolorpy import Color
@@ -18,9 +18,7 @@ def _calc_other_ground_color(color: Color) -> str:
     return "white"
 
 
-def col_separator_style_filter(
-    lcell: Cell, rcell: Cell, **kwargs: Dict[str, Any]
-) -> Optional[Style]:
+def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs: Any) -> Optional[Style]:
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
     row = lcell.row if lcell else rcell.row
@@ -39,7 +37,7 @@ def col_separator_style_filter(
     return None
 
 
-def style_filter(cell: Cell, **kwargs: Dict[str, Any]) -> Optional[Style]:
+def style_filter(cell: Cell, **kwargs: Any) -> Optional[Style]:
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
 
