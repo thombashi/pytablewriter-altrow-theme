@@ -18,7 +18,9 @@ def _calc_other_ground_color(color: Color) -> str:
     return "white"
 
 
-def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs: Any) -> Optional[Style]:
+def col_separator_style_filter(
+    lcell: Optional[Cell], rcell: Optional[Cell], **kwargs: Any
+) -> Optional[Style]:
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
 
