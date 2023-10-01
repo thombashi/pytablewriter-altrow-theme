@@ -24,13 +24,16 @@ def col_separator_style_filter(
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
 
-    if lcell.is_header_row():
+    cell = lcell if lcell else rcell
+    if cell is None:
         return None
 
-    row = lcell.row if lcell else rcell.row
+    if cell.is_header_row():
+        return None
+
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
-    if row % 2 == 0:
+    if cell.row % 2 == 0:
         fg_color = _calc_other_ground_color(color)
         bg_color = color
     else:
