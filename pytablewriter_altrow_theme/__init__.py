@@ -21,8 +21,11 @@ def _calc_other_ground_color(color: Color) -> str:
 def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs: Any) -> Optional[Style]:
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
-    row = lcell.row if lcell else rcell.row
 
+    if lcell.is_header_row():
+        return None
+
+    row = lcell.row if lcell else rcell.row
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
     if row % 2 == 0:
@@ -40,6 +43,9 @@ def col_separator_style_filter(lcell: Cell, rcell: Cell, **kwargs: Any) -> Optio
 def style_filter(cell: Cell, **kwargs: Any) -> Optional[Style]:
     fg_color: Union[Color, str, None] = None
     bg_color: Union[Color, str, None] = None
+
+    if cell.is_header_row():
+        return None
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
 
