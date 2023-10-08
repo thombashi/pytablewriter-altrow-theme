@@ -32,12 +32,14 @@ def col_separator_style_filter(
         return None
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
+    other_color = _calc_other_ground_color(color)
 
     if cell.row % 2 == 0:
-        fg_color = _calc_other_ground_color(color)
+        fg_color = other_color
         bg_color = color
     else:
         fg_color = color
+        bg_color = other_color
 
     if fg_color or bg_color:
         return Style(color=fg_color, bg_color=bg_color)
@@ -53,12 +55,14 @@ def style_filter(cell: Cell, **kwargs: Any) -> Optional[Style]:
         return None
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
+    other_color = _calc_other_ground_color(color)
 
     if cell.row % 2 == 0:
-        fg_color = _calc_other_ground_color(color)
+        fg_color = other_color
         bg_color = color
     else:
         fg_color = color
+        bg_color = other_color
 
     if fg_color or bg_color:
         return Style(color=fg_color, bg_color=bg_color)
