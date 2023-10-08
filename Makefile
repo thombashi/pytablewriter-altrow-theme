@@ -14,6 +14,10 @@ check:
 clean:
 	@$(PYTHON) -m tox -e clean
 
+.PHONY: example
+example:
+	$(PYTHON) ./examples/write_html.py
+
 .PHONY: fmt
 fmt:
 	@$(PYTHON) -m tox -e fmt
