@@ -25,7 +25,7 @@ Summary
     :target: https://coveralls.io/github/thombashi/pytablewriter-altrow-theme?branch=master
     :alt: Test coverage: coveralls
 
-pytablewriter-altrow-theme is a `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to provide a theme that colored rows alternatively.
+``pytablewriter-altrow-theme`` is a `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to provide a theme that colored rows alternatively.
 
 
 Installation
@@ -60,6 +60,7 @@ Usage
        :scale: 100%
        :alt: https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/ss/ptw-altrow-theme_example_default.png
 
+You can change the color of the theme by using the ``color`` parameter:
 
 :Sample Code:
     .. code-block:: python
@@ -75,7 +76,6 @@ Usage
                 [3, "bar"],
             ],
             margin=1,
-            theme="altrow",
         )
 
         writer.set_theme("altrow", color="yellow")
@@ -88,8 +88,18 @@ Usage
        :alt: https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/ss/ptw-altrow-theme_example_yellow.png
 
 
+Other Examples
+--------------------------------------------
+- HTML example: `source file <https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/examples/write_html.py>`__ and `the output <https://thombashi.github.io/pytablewriter-altrow-theme/example.html>`__
+
+
 Dependencies
 ============================================
 - Python 3.7+
 - `Python package dependencies (automatically installed) <https://github.com/thombashi/pytablewriter-altrow-theme/network/dependencies>`__
 
+
+Related Projects
+============================================
+- `pytablewriter <https://github.com/thombashi/pytablewriter>`__
+- `pytablewriter-altcol-theme <https://github.com/thombashi/pytablewriter-altcol-theme>`__
