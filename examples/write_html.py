@@ -18,7 +18,7 @@ def main() -> None:
     writer.from_tabledata(data, is_overwrite_table_name=False)
     writer.set_theme("altrow")
     with open(
-        Path(__file__).parent.parent.joinpath("docs", "ptw-altrow-theme-example.html"), "w"
+        Path(__file__).parent.parent.joinpath("docs", "example.html"), "w"
     ) as f:
         writer.stream = f
         writer.write_table(write_css=True)
