@@ -42,7 +42,11 @@ setuptools.setup(
     author_email=pkg_info["__email__"],
     description="A pytablewriter plugin to provide a theme that colored rows alternatively.",
     include_package_data=True,
-    keywords=["pytablewriter", "plugin"],
+    keywords=[
+        "pytablewriter",
+        "plugin",
+        "theme",
+    ],
     license=pkg_info["__license__"],
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/x-rst",
