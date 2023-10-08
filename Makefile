@@ -38,4 +38,4 @@ setup: setup-ci
 
 .PHONY: test
 test:
-	$(PYTHON) -m tox --verbose -e py
+	$(PYTHON) -m tox -e py
