@@ -90,7 +90,7 @@ You can change the color of the theme by using the ``color`` parameter:
 
 Other Examples
 --------------------------------------------
-- HTML example: `source file <https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/examples/write_html.py>`__ and `the output <https://thombashi.github.io/pytablewriter-altrow-theme/example.html>`__
+- Generate HTML table example: `source file <https://github.com/thombashi/pytablewriter-altrow-theme/blob/master/examples/write_html.py>`__ and `the output <https://thombashi.github.io/pytablewriter-altrow-theme/example.html>`__
 
 
 Dependencies
